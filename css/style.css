@@ -1,0 +1,128 @@
+﻿@meta charset "utf-8";
+
+*{margin:0; padding:0;}
+li{list-style:none;}
+img{border:0; vertical-align:middle;}
+address,em{font-style:normal;}
+a{text-decoration:none; color:#555;}
+
+body{color:#333; font:20px sunflower; background-color:#fffff4; width:1460px; margin:0 auto; font-weight:normal;}
+#wrapper{position:relative; width:100%; margin:0 auto; height:1900px; margin:20px;}
+h5{ width:150px; color:white; background:rgba(140,198,63,0.7); border-radius:0 0 50px 0; padding:10px 0; font-family:"맑은 고딕"; text-indent:10px; position:relative;}
+/* 팝업창 */ 
+#pop{width:450px; height:520px; border:2px solid green; box-shadow:2px 2px 3px gray; position:absolute; left:50%; top:20%; margin-left:-225px; text-align:center; background:#fffff4; border-radius:0 0 0 60px; z-index:1000; display:none; }
+#pop h1{padding:20px 0; color:#fff; background:green; font-family:"do hyeon";}
+#pop h1 span{letter-spacing:3.5px;}
+
+#pop p{width:400px; margin:0 auto; margin-top:25px; background:#fff; border-radius:20px; padding-bottom:15px;}
+#pop p strong{color:#ff7c00;}
+#pop p span{background:#65aa22; border-radius:20px 20px 0 0 ; display:block; margin:0; color:white; padding:7px 0; font-size:24px; }
+#pop em{float:right; padding-right:40px;}
+#pop .go{width:200px;  padding:12px 0; background:#65aa22; }
+#pop .go a{color:#fff; font-size:24px; width:200px; padding:30px 52px;}
+/* #pop .go a{width:200px; padding: 12px 0;} */
+#pop>span{position:absolute; bottom:10px; right: 20px; color:red; font-size:30px; cursor:pointer;}
+/* header */ 
+#header {position:relative; width:100%;}
+#header h1{ width:200px; padding:30px 0 30px 30px; float:left;}
+ #header h1 img{margin:0 520px;}
+#header .infoMenu{float:right; color:white; background:rgba(140,198,63,0.7); border-radius:0 0 0 50px; font-family:"맑은 고딕"; text-indent:10px; position:relative; right:200px;}
+#header .infoMenu li{float:left; padding: 10px 20px;}
+#header .infoMenu li:nth-child(3){padding-right:15px;}
+#header .infoMenu li a{font-size:15px; color:white;}
+#header .infoMenu li:hover a{color:green;}
+
+/* 메뉴 */
+#gnb{position:absolute; top:100px; left:20px; width:450px; }
+			#gnb>li{float:left; position:relative;  /*>li라 안할 경우 서브메뉴의 li까지 선택됨.*/}
+				#gnb>li a{ display:block; width:150px; height:40px; text-align:center; line-height:40px; font-size:24px; font-weight:bold; box-sizing:border-box;}
+					#gnb>li a:hover{color:yellow; } 
+					#gnb>li:hover>a{color:green; border-bottom:2px solid green;}
+				#sub{position:absolute; left:0; top:50px; z-index:700; display:none; border-radius:0 0 50px 0; background:rgba(140,198,63,0.7);}
+				#sub li a{font-size:20px; font-weight:normal; color:white; } 
+				
+#gnb2{ float:right; position:absolute; top:100px; right:230px; }
+#gnb2>li{float:left; padding:0 30px; font-weight:bold; font-size:24px;}
+#gnb2>li:hover a{color:#65aa22;}
+
+/* slide */
+#imgview{clear:both; position:relative; margin-bottom:30px;/* */width:1160px; height:450px;  overflow:hidden;}
+#slide{width:6960px; height:450px;  position:absolute; top:0; left:0; z-index:-10;  }
+#slide li{float:left;}
+
+.icon{position:absolute; left:500px; top:580px; z-index:1; } 
+.icon li{float:left; cursor:pointer; padding-right:20px;}
+
+
+/* 리뷰 */
+#review { width:1200px; margin:15px auto;  width:1200px; height:250px; margin-bottom:30px; float:left;} 
+#review p{position:relative;  overflow:hidden; width:380px; height:250px; margin-right:10px;}
+#review img{ height:250px; width:380px;  transition:all 1s; } 
+/* #review strong{  position:absolute; top:140px; left:115px; color:#fff; font-weight:normal; z-index:100; opacity:0.5; transition:all 1s;} */
+
+#review .re{float:left;}
+#review .re strong{position:absolute; left:110px; color:#fff; top:130px; z-index:100; opacity:0; transition:all 0.3s; display:block; cursor:pointer;}
+#review .re:hover strong{opacity:1;}
+#review .re:hover span{position:absolute; background:rgba(0,0,0,0.5); display:block; width:380px; height:250px;}
+
+
+
+
+
+/* container */
+#container{position:relative; width:100%; /*height:100px*/ }
+
+/* 의료진 소개 */ 
+#dml{ position:relative; width: 300px; height:450px; margin-bottom:20px; overflow:hidden;  left:80px; top:30px;}
+.doctor{width:1200px; height:450px; position:absolute;}
+.doctor li{ float:left;  }
+.doctor li img{ width:300px; height:450px; }
+.doctor li span{display:none; }
+
+.button img{width:25px; height:40px; position:absolute; top:550px; cursor:pointer;}
+.left{left:20px; }
+.right{left:420px;}
+
+
+/*name*/
+#name{width:100px; height:50px; position:relative; left:195px; top:30px; }
+
+
+/* 공지사항 */
+#gong{position:absolute; top:850px; width:400px; left:30px;}
+#gong ul a{margin-left:30px; font-size:18px; line-height:220%; }
+#gong ul a:hover{ padding-bottom:5px; color:#65aa22;}
+#gong span{float:right; font-size:14px;line-height:220%;}
+
+
+
+/* 오시는 길 */
+.map{ position:absolute; right:200px; top:325px; float:right; width:800px;}
+.map a img{width:680px; height: 550px; }
+/* footer */
+
+/* sns */
+#sns{position:absolute; right:230px; bottom:170px; }
+#sns img{ padding:0px 20px; opacity:0.5; transform:scale(1); transition:all 0.5s; }
+#sns img:hover{opacity:1; transform:scale(1.4); color:yellow;}
+
+/* footer */
+#footer{border-top:5px solid #65aa22; width:1260px; position:absolute; bottom:0; padding-top:30px; text-align:center; } 
+#footer h1{float:left; padding:0 150px; width:200px; height:100px;}
+#footer address,#footer small{color:#aaa; font-size:16px;}
+#footer address{color:#aaa;}
+
+/* 사이드바 */ 
+#side{width:200px; height:390px; position:absolute; background:#fff; text-align:center; border-radius:30px;  font-size:18px; right:0; z-index:100; top:-500px;}
+#side a{color:#004c06;}
+#side li img{margin-right:20px; width:40px; height:35px;}
+#side li:nth-child(1){height:70px; background:#8cc63f; padding-top:10px; border-radius:30px 30px 0 0;}
+#side li:nth-child(1) span{font-size:28px; color:yellow;}
+#side li:nth-child(1) a{font-size:22px;}
+#side li:nth-child(2){height:100px; background:#ffffaa; line-height:35px; letter-spacing:1.5px;}
+#side li:nth-child(2) a{font-size:18px;}
+#side li:nth-child(2) span{font-size:18px; color:orange; letter-spacing:1.2px;}
+#side li:nth-child(3){height:60px; border-bottom:1px solid #8cc63f; line-height:60px;}
+#side li:nth-child(4){height:60px; border-bottom:1px solid #8cc63f;  line-height:60px;}
+#side li:nth-child(5){height:60px; line-height:60px;}
+#side li:nth-child(6){height:30px; background:#8cc63f; border-radius:0 0 30px 30px;}
